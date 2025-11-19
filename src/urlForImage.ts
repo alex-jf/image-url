@@ -32,6 +32,7 @@ export const SPEC_NAME_TO_URL_NAME_MAPPINGS = [
   ['dpr', 'dpr'],
   ['pad', 'pad'],
   ['frame', 'frame'],
+  ['cs', 'cs'],
 ]
 
 export default function urlForImage(options: ImageUrlBuilderOptions): string {

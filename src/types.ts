@@ -28,6 +28,7 @@ export type ImageUrlBuilderOptions = Partial<SanityProjectDetails> & {
   pad?: number
   vanityName?: string
   frame?: number
+  cs?: ColorSpace
 }
 
 export type ImageUrlBuilderOptionsWithAliases = ImageUrlBuilderOptions & {
@@ -61,6 +62,8 @@ export type ImageFormat = 'jpg' | 'pjpg' | 'png' | 'webp'
 export type FitMode = 'clip' | 'crop' | 'fill' | 'fillmax' | 'max' | 'scale' | 'min'
 
 export type CropMode = 'top' | 'bottom' | 'left' | 'right' | 'center' | 'focalpoint' | 'entropy'
+
+export type ColorSpace = 'origin' | 'srgb' | 'cmyk' | 'b-w'
 
 export type AutoMode = 'format'
 
